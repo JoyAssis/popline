@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+width:100%;
+height: 10vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: blueviolet;
+font-family: 'Press Start 2P', cursive;
+}
+h1 span{
+text-decoration: underline lawngreen;
+}
+.menu{
+  display:none;
+}
+
+
+
+
+.head-menu{
+width: 40%;
+}
+.head-menu ul{
+display: flex;
+justify-content: space-between;
+border-bottom: lawngreen 1px solid;
+list-style: none;
+text-transform: capitalize;
+}
+.head-menu li:hover{
+color: lightgreen;
+cursor: pointer;
+}
+.content-gallery{
+width: 100%;
+height: 50vh;
+display: flex;
+background-color: black;
+}
+.content-gallery img{
+width: 35%;
+overflow: hidden;
+}
+.content-gallery img:hover{
+ cursor: pointer;
+ opacity: 0.5;
+ border: 3px solid lawngreen;
+ transition: .1s ease;
+}
+main{
+ display:flex; 
+ width: 100%;
+ gap: 20px;
+ padding: 1rem;
+}
+.news{
+ border-right: 2px solid;
+ width: 70%;
+}
+h2{
+text-transform: uppercase;
+text-decoration: underline lawngreen;
+padding:16px;
+}
+.news div{
+width: 40vw;
+display: flex;
+flex-direction: column;
+margin-left: 20px;
+gap: 10px;
+}
+.news div + div{
+  border-top: 1px solid;
+  padding-top:24px;
+}
+.news img{
+ width: 20vw;
+}
+aside{
+ width: 20%;
+ display: flex;
+ flex-direction: column;
+}
+aside li{
+ list-style: none;
+ border-bottom: 1px solid purple;
+ cursor: pointer;
+}
+footer{
+width: 100%;
+height: 40vh;
+background-color: blueviolet;
+display: flex;
+padding: 1em;
+align-items: center;
+}
+.copy{
+ width: 30vh;
+ line-height: 20px;
+ word-spacing: 3px;
+}
+footer nav{
+width: 10%;
+display: flex;
+justify-content: flex-end;
+}
+.logo{
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
+}
+.logo img {
+    width: 10vw;
+    border-radius: 50px;
+}
+/* ----------responsivo------------------------- */
+@media (max-width:767px) {
+  header{
+    height:20vh;
+    border:solid red 2px;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+ .menu{
+    display:initial ;
+    height: 100%;
+    width: 20vh;
+    border: 2px solid red;
+    background-image: url("./assets/menu.jpg");
+    background-size: contain;
+  } 
+  .head-menu{
+    width: 600px;
+    display:none;
+  }
+}
